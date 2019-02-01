@@ -97,29 +97,31 @@
       <span>Заинтересовались</span>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="booking-search">ПОИСК ГОСТИНИЦЫ В седоне</button>
-      <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="hotel-search-list">
-          <li class="hotel-search-item">
-            <label for="arrival-date-field">Дата заезда:</label>
-            <input type="text" id="arrival-date-field" name="arrival-date" value="24 апреля 2017">
-            <button type="button"><img src="img/calendar.svg"></button>
-          </li>
-          <li class="hotel-search-item">
-            <label for="departure-date-field">Дата выезда:</label>
-            <input type="text" id="departure-date-field" name="departure-date" value="4 июля 2017">
-            <button type="button"><img src="img/calendar.svg"></button>
-          </li>
-          <li class="hotel-search-item">
-            <label for="adults-field">Взрослые:</label>
-            <input type="text" id="adults-field" name="adults" value="2">
-          </li>
-          <li class="hotel-search-item">
-            <label for="kids-field">Дети:</label>
-            <input type="text" id="kids-field" name="kids" value="0">
-          </li>
-        </ul>
-        <button class="btn-find" type="submit">Найти</button>
-      </form>
+      <div class="hotel-search-wrapper">
+        <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="hotel-search-list">
+            <li class="hotel-search-item">
+              <label for="arrival-date-field">Дата заезда:</label>
+              <input type="text" id="arrival-date-field" name="arrival-date" value="24 апреля 2017">
+              <button type="button"><img src="img/calendar.svg"></button>
+            </li>
+            <li class="hotel-search-item">
+              <label for="departure-date-field">Дата выезда:</label>
+              <input type="text" id="departure-date-field" name="departure-date" value="4 июля 2017">
+              <button type="button"><img src="img/calendar.svg"></button>
+            </li>
+            <li class="hotel-search-item">
+              <label for="adults-field">Взрослые:</label>
+              <input type="text" id="adults-field" name="adults" value="2">
+            </li>
+            <li class="hotel-search-item">
+              <label for="kids-field">Дети:</label>
+              <input type="text" id="kids-field" name="kids" value="0">
+            </li>
+          </ul>
+          <button class="btn-find" type="submit">Найти</button>
+        </form>
+     </div>
       <div class="map">
         <h2 class="visually-hidden">Расположение</h2>
         <img src="img/map.jpg" alt="карта" width="1200" height="593">
