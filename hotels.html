@@ -9,8 +9,8 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="#" alt="Логотип">
+      <a href="index.html" class="main-header-logo">
+        <img src="img/logo.svg" alt="Логотип" width="140" height="72">
       </a>
       <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
@@ -61,8 +61,13 @@
         </fieldset>
         <fieldset class="price">
           <legend>Стоимость в сутки (Р):</legend>
-          
+          <ul class="range-filter">
+              <li></li>
+              <li></li>
+          </ul>
+          <button type="submit" class="btn-filter">Показать</button>
         </fieldset>
+
       </form>
     </section>
     <section class="housing">
@@ -70,12 +75,12 @@
       <div class="sorting">
         <p class="sorting-text">Найдено: <span>3</span></p>
         <p class="sorting-title">Сортировка:</p>
-        <a class="sorting-by-price">По цене</a>
-        <a class="sorting-by-type">По типу</a>
-        <a class="sorting-by-rating">По рейтингу</a>
+        <a href="#" class="sorting-by-price">По цене</a>
+        <a href="#" class="sorting-by-type">По типу</a>
+        <a href="#" class="sorting-by-rating">По рейтингу</a>
         <p class="sorting-icon-dir">
-          <a class="icon-up-dir"></a>
-          <a class="icon-down-dir"></a>
+          <a href="#" class="icon-up-dir" aria-label="Сортировка по возрастанию"></a>
+          <a href="#" class="icon-down-dir" aria-label="Сортировка по убыванию"></a>
         </p>
       </div>
       <ul class="housing-list">
@@ -98,7 +103,7 @@
           </div>
           <div class="housing-rating">
             <div class="housing-star">
-              <span></span>
+              <span aria-label="5 звезд"></span>
               <span></span>
               <span></span>
               <span></span>
@@ -125,7 +130,7 @@
           </div>
           <div class="housing-rating">
             <div class="housing-star">
-              <span></span>
+              <span aria-label="3 звезды"></span>
               <span></span>
               <span></span>
             </div>
@@ -151,7 +156,7 @@
           </div>
           <div class="housing-rating">
             <div class="housing-star">
-              <span></span>
+              <span aria-label="2 звезды"></span>
               <span></span>
             </div>
             <span class="rating">Рейтинг: 9,2</span>
