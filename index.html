@@ -8,10 +8,10 @@
 
 <body>
   <header class="main-header">
+    <a class="main-header-logo">
+      <img src="img/logo.svg" alt="Логотип" width="140" height="72">
+    </a>
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" alt="Логотип" width="140" height="72">
-      </a>
       <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -98,7 +98,7 @@
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="booking-search">ПОИСК ГОСТИНИЦЫ В седоне</button>
       <div class="hotel-search-wrapper">
-        <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
+        <form class="hotel-search" action="https://echo.htmlacademy.ru" method="get">
           <ul class="hotel-search-list">
             <li class="hotel-search-item">
               <label for="arrival-date-field">Дата заезда:</label>
@@ -112,18 +112,21 @@
             </li>
             <li class="hotel-search-item">
               <label for="adults-field">Взрослые:</label>
+              <button class="minus-control" type="button" aria-label="Уменьшить"></button>
               <input type="text" id="adults-field" name="adults" value="2">
+              <button class="plus-control" type="button" aria-label="Увеличить"></button>
             </li>
             <li class="hotel-search-item">
               <label for="kids-field">Дети:</label>
+              <button class="minus-control" type="button" aria-label="Уменьшить"></button>
               <input type="text" id="kids-field" name="kids" value="0">
+              <button class="plus-control" type="button" aria-label="Увеличить"></button>
             </li>
           </ul>
           <button class="btn-find" type="submit">Найти</button>
         </form>
      </div>
-      <div class="map">
-        <h2 class="visually-hidden">Расположение</h2>
+      <div class="map" aria-label="Месторасположение">
         <img src="img/map.jpg" alt="карта" width="1200" height="593">
       </div>
     </section>
@@ -132,9 +135,9 @@
     <span>#visitsedona</span>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Седона в Твиттере</span></a></li>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Седона в Фейсбуке</span></a></li>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Седона в Ютубе</span></a></li>
+        <li><a class="social-button" href="#" aria-label="Седона в Твиттере">Твиттер</a></li>
+        <li><a class="social-button" href="#" aria-label="Седона в Фейсбуке">Фейсбук</a></li>
+        <li><a class="social-button" href="#" aria-label="Седона в Ютубе">Ютуб</a></li>
       </ul>
     </div>
     <div class="link">

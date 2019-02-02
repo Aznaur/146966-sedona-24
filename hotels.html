@@ -8,10 +8,10 @@
 
 <body>
   <header class="main-header">
+    <a href="index.html" class="main-header-logo">
+      <img src="img/logo.svg" alt="Логотип" width="140" height="72">
+    </a>
     <nav class="main-navigation">
-      <a href="index.html" class="main-header-logo">
-        <img src="img/logo.svg" alt="Логотип" width="140" height="72">
-      </a>
       <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -24,7 +24,7 @@
     <h1 class="visually-hidden">Поиск и бранирование жилья</h1>
     <section class="filter">
       <h2 class="visually-hidden">Форма поиска жилья</h2>
-      <form class="detail-hotel-search" action="https://echo.htmlacademy.ru" method="post">
+      <form class="detail-hotel-search" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="infrastructure">
           <legend>Инфраструктура</legend>
           <ul class="infrastructure-list">
@@ -38,7 +38,7 @@
             </li>
             <li class="infrastructure-item">
               <input type="checkbox" name="network" id="network-field">
-              <label for="network-field">Wi-Fi</label>
+              <label lang="en" for="network-field">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
@@ -78,10 +78,10 @@
         <a href="#" class="sorting-by-price">По цене</a>
         <a href="#" class="sorting-by-type">По типу</a>
         <a href="#" class="sorting-by-rating">По рейтингу</a>
-        <p class="sorting-icon-dir">
+        <div class="sorting-icon-dir">
           <a href="#" class="icon-up-dir" aria-label="Сортировка по возрастанию"></a>
           <a href="#" class="icon-down-dir" aria-label="Сортировка по убыванию"></a>
-        </p>
+        </div>
       </div>
       <ul class="housing-list">
         <li class="list-item">
@@ -98,7 +98,7 @@
             </div>
             <div class="housing-btn">
               <a class="btn btn-more" href="#">Подробнее</a>
-              <button class="btn to-book">Забронировать</button>
+              <button type="button" class="btn to-book">Забронировать</button>
             </div>
           </div>
           <div class="housing-rating">
@@ -125,7 +125,7 @@
             </div>
             <div class="housing-btn">
               <a class="btn btn-more" href="#">Подробнее</a>
-              <button class="btn to-book">Забронировать</button>
+              <button type="button" class="btn to-book">Забронировать</button>
             </div>
           </div>
           <div class="housing-rating">
@@ -151,7 +151,7 @@
             </div>
             <div class="housing-btn">
               <a class="btn btn-more" href="#">Подробнее</a>
-              <button class="btn to-book">Забронировать</button>
+              <button type="button" class="btn to-book">Забронировать</button>
             </div>
           </div>
           <div class="housing-rating">
@@ -169,9 +169,9 @@
     <span>#visitsedona</span>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="">Твиттер</a></li>
-        <li><a class="social-button" href="">Фейсбук</a></li>
-        <li><a class="social-button" href="">Ютуб</a></li>
+        <li><a class="social-button" href="#" aria-label="Седона в Твиттере">Твиттер</a></li>
+        <li><a class="social-button" href="#" aria-label="Седона в Фейсбуке">Фейсбук</a></li>
+        <li><a class="social-button" href="#" aria-label="Седона в Ютубе">Ютуб</a></li>
       </ul>
     </div>
     <div class="link">
