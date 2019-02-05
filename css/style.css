@@ -47,17 +47,25 @@ a {
 }
 
 .main-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+  opacity: 0.3;
 }
 
-.desc {
+.greeting {
+    background-color: #f2f2f2;
+}
+.desc-lead,
+.booking p {
   text-align: center;
+  line-height: 26px;
   background-color: #ffffff;
+  color: #333333;
 }
 
 .desc-slogan {
-  font-size: 21px;
+  text-align: center;
   line-height: 26px;
+  font-size: 21px;
   font-weight: bold;
 }
 
@@ -100,10 +108,12 @@ a {
   font-weight: bold;
 }
 
+
 .booking-search {
   text-transform: uppercase;
   vertical-align: middle;
   font-size: 21px;
+  font-weight: bold;
   line-height: 26px;
   border: none;
   color: #ffffff;
@@ -197,6 +207,15 @@ input[value] {
   color: #000000;
 }
 
+.housing-info a:hover {
+    color: #81b3d2;
+}
+
+.housing-info a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
 .housing-description {
   color: #333333;
 }
@@ -221,4 +240,8 @@ input[value] {
 .rating {
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.map {
+    background-color: #f2f2f2;
 }
