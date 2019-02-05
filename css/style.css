@@ -1,6 +1,5 @@
 body {
   margin: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -18,13 +17,27 @@ a {
   font-weight: bold;
   background-color: #ffffff;
 }
+
 .site-navigation,
 .advantages-list,
 .offers-list,
 .hotel-search-list {
   list-style: none;
 }
-.main-navigation a{
+
+.main-navigation .active,
+.inner-page .active {
+  color: #766357;
+}
+
+.main-navigation .active:hover,
+.main-navigation .active:active,
+.inner-page .active:hover,
+.inner-page .active:active {
+  color: #766357;
+}
+
+.main-navigation a {
   color: #000000;
 }
 
@@ -72,7 +85,7 @@ a {
 
 .offers p,
 .advantages-item .advantages-slogan,
-.advantages-item  span {
+.advantages-item span {
   color: #333333;
 }
 
@@ -80,7 +93,6 @@ a {
   background-color: #eeeeee;
   text-align: center;
 }
-
 
 .booking span {
   font-size: 30px;
@@ -94,35 +106,38 @@ a {
   font-size: 21px;
   line-height: 26px;
   border: none;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .btn-booking {
-    background-color: #766357;
+  background-color: #766357;
 }
 
 .btn-find {
   background-color: #81b3d2;
 }
 
-.btn-find:hover {
+.btn-find:hover,
+.btn-more:hover {
   background-color: #669ec0;
 }
 
-.btn-find:active {
+.btn-find:active,
+.btn-more:active {
   background-color: #5496bd;
-  color:  rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.btn-booking:hover {
+.btn-booking:hover,
+.to-book:hover {
   background-color: #604e43;
 }
 
-.btn-booking:active {
+.btn-booking:active,
+.to-book:active {
   background-color: #503e33;
-  color:  rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
-
 
 .hotel-search {
   font-weight: bold;
@@ -151,18 +166,59 @@ input[value] {
 }
 
 .main-footer {
-  background-color: rgba(255 ,255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
-.main-footer > span {
+
+.main-footer>span {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
-.footer-social ul{
+.footer-social ul {
   list-style: none;
 }
 
 .link span {
   line-height: 26px;
+}
+
+.housing-list {
+  list-style: none;
+}
+
+.list-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.housing-info a {
+  color: #000000;
+}
+
+.housing-description {
+  color: #333333;
+}
+
+.btn {
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.btn-more {
+  background-color: #81b3d2;
+}
+
+.to-book {
+
+  border: none;
+  background-color: #766357;
+}
+
+.rating {
+  color: #666666;
+  background-color: #f2f2f2;
 }
