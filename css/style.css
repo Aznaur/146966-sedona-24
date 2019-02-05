@@ -6,7 +6,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
+  color: #000000;
 }
 
 a {
@@ -18,7 +18,10 @@ a {
   font-weight: bold;
   background-color: #ffffff;
 }
-.site-navigation {
+.site-navigation,
+.advantages-list,
+.offers-list,
+.hotel-search-list {
   list-style: none;
 }
 .main-navigation a{
@@ -32,4 +35,134 @@ a {
 
 .main-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.desc {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.desc-slogan {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.left .advantages-text,
+.right .advantages-text {
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.advantages-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.offers {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.offers h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.offers p,
+.advantages-item .advantages-slogan,
+.advantages-item  span {
+  color: #333333;
+}
+
+.advantages-item {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+
+.booking span {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.booking-search {
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  color:#ffffff;
+}
+
+.btn-booking {
+    background-color: #766357;
+}
+
+.btn-find {
+  background-color: #81b3d2;
+}
+
+.btn-find:hover {
+  background-color: #669ec0;
+}
+
+.btn-find:active {
+  background-color: #5496bd;
+  color:  rgba(255, 255, 255, 0.3);
+}
+
+.btn-booking:hover {
+  background-color: #604e43;
+}
+
+.btn-booking:active {
+  background-color: #503e33;
+  color:  rgba(255, 255, 255, 0.3);
+}
+
+
+.hotel-search {
+  font-weight: bold;
+  line-height: 26px;
+}
+
+input[value] {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.booking input[type="text"] {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.booking input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.booking input[type="text"]:focus {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+
+.main-footer {
+  background-color: rgba(255 ,255, 255, 0.9);
+}
+.main-footer > span {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.footer-social ul{
+  list-style: none;
+}
+
+.link span {
+  line-height: 26px;
 }
