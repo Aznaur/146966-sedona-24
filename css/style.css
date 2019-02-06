@@ -41,15 +41,18 @@ a {
   color: #000000;
 }
 
+
+
 .main-navigation a:hover,
 .main-navigation a:focus {
   color: #81b3d2;
 }
 
+
 .main-navigation a:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
+
 
 .greeting {
     background-color: #f2f2f2;
@@ -212,8 +215,7 @@ input[value] {
 }
 
 .housing-info a:active {
-    color: #000000;
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .housing-description {
