@@ -21,7 +21,8 @@ a {
 .site-navigation,
 .advantages-list,
 .offers-list,
-.hotel-search-list {
+.hotel-search-list,
+.filter ul {
   list-style: none;
 }
 
@@ -200,7 +201,8 @@ input[value] {
   list-style: none;
 }
 
-.list-item h3 {
+.list-item h3,
+.sorting-text {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -246,4 +248,60 @@ input[value] {
 
 .map {
     background-color: #f2f2f2;
+}
+
+
+.filter {
+  background-color: #e1e1e1;
+}
+.filter label{
+  color: #ffffff;
+}
+
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn-filter {
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.btn-filter:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sorting-title,
+.sorting a  {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-by-type,
+.sorting-by-rating {
+  color: rgba(0,0,0,0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-by-type:hover,
+.sorting-by-rating:hover {
+  color: #81b3d2;
+}
+
+.sorting-by-type:active,
+.sorting-by-rating:active {
+  color: #000000;
+  border: none;
+}
+
+.sorting-by-price {
+  color: #81b3d2;
 }
