@@ -261,10 +261,40 @@ input[value] {
   line-height: 26px;
 }
 
+.housing {
+  background-color: #ffffff;
+}
+
 .housing-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.detail-hotel-search,
+.sorting,
+.housing-list {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.list-item {
+  display: flex;
+}
+
+.housing-photo {
+  margin-right: 30px;
+}
+
+.housing-rating {
+  margin-left: auto;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+
+}
 .list-item h3,
 .sorting-text {
   font-size: 21px;
