@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-width: 800px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -19,14 +20,13 @@ img {
 
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2)
 }
 
 .main-header {
     position: relative;
-  display: flex;
 }
 
 .main-header-logo {
@@ -56,11 +56,11 @@ img {
 }
 
 .site-navigation li {
-    width: 240px;
+    width: 20%;
     text-align: center;
 }
 
-.place {
+.site-navigation li:nth-of-type(4n+2) {
     margin-right: 240px;
 }
 
@@ -105,6 +105,7 @@ img {
                       url("../img/background.jpg");
     background-repeat: no-repeat;
     background-position: center bottom, 0 -56px;
+    background-size: cover;
 }
 
 .greeting-title {
