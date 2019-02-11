@@ -244,6 +244,7 @@ img {
 
 .offers-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -560,4 +561,59 @@ legend {
 }
 
 .offers-item {
+  position: relative;
+  padding-top: 161px;
+  width: 400px;
+}
+
+.offers-item p,
+.offers-item h3 {
+  margin:0;
+  padding: 0;
+}
+
+.offers-item h3 {
+  margin-bottom: 17.5px;
+}
+.offers-item p {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 82.5px;
+}
+
+
+.house::before {
+  content:"";
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  top:60px;
+  left: 50%;
+  margin-left: -37.5px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+}
+
+.food::before {
+  content:"";
+  width: 74px;
+  height: 70px;
+  position: absolute;
+  top:60px;
+  left: 50%;
+  margin-left: -37px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+}
+
+.souvenirs::before {
+  content:"";
+  width: 64px;
+  height: 76px;
+  position: absolute;
+  top:56px;
+  left: 50%;
+  margin-left: -32px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
 }
