@@ -31,9 +31,11 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .container {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2)
@@ -282,15 +284,17 @@ img {
 }
 
 .btn-booking {
+  width: 568px;
   background-color: #766357;
-  padding-left: 140px;
-  padding-right: 140px;
   padding-top: 29.5px;
   padding-bottom: 29.5px;
 }
 
 .btn-find {
   background-color: #81b3d2;
+  width: 100%;
+  height: 58px;
+  padding:0;
 }
 
 .btn-find:hover,
@@ -349,6 +353,13 @@ input[value] {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.footerr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .main-footer>span {
   display: block;
   width: 240px;
@@ -381,7 +392,8 @@ input[value] {
   background-color: #81b3d2;
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
   background-color: #669ec0;
 }
 
@@ -616,4 +628,128 @@ legend {
   margin-left: -32px;
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
+}
+.hotel-search-list {
+  min-height: 173px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
+}
+
+.hotel-search-wrapper {
+  width: 568px;
+  box-sizing: border-box;
+  padding: 55px;
+}
+
+.hotel-search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 458px;
+}
+
+.hotel-search-item input[name="arrival-date"],
+.hotel-search-item input[name="departure-date"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  width :346px;
+  box-sizing: border-box;
+}
+
+.calendar path,
+.calendar rect {
+  fill: #cacaca;
+}
+
+.calendar:hover path,
+.calendar:hover rect,
+.calendar:focus path,
+.calendar:focus rect{
+  fill: #000000;
+}
+.calendar:active path,
+.calendar:active rect {
+  fill: #81b3d2;
+}
+
+.hotel-search-item:nth-of-type(3),
+.hotel-search-item:nth-of-type(4) {
+  width: 226px;
+}
+
+.hotel-search-item:nth-of-type(4) {
+  justify-content: flex-end;
+  margin-left:auto;
+}
+
+.hotel-search-item:nth-of-type(4) label {
+  margin-right: 27px;
+}
+
+.hotel-search-item input[name="adults"],
+.hotel-search-item input[name="kids"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  width: 114px;
+  box-sizing: border-box;
+}
+
+.minus-control {
+  position: absolute;
+  left:112px;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  border: none;
+  padding: 0;
+  background-color: inherit;
+}
+
+.minus-control svg {
+  margin-bottom: 2px;
+}
+
+.plus-control{
+  position: absolute;
+  right:0;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  border: none;
+  padding: 0;
+  background-color: inherit;
+}
+
+.plus-control svg {
+  margin-top: 3px;
+}
+
+.calendar {
+  position:absolute;
+  background-color: inherit;
+  padding:0;
+  right: 0px;
+  top:0px;
+  width: 39px;
+  height: 38px;
+  border: none;
+}
+
+.minus-control:hover rect,
+.plus-control:hover rect,
+.minus-control:focus rect,
+.plus-control:focus rect{
+  fill: #000000;
+}
+
+.minus-control:active rect,
+.plus-control:active rect {
+  fill:#81b3d2;
 }
