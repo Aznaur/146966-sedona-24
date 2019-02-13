@@ -31,7 +31,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -48,7 +47,8 @@ img {
 .main-header-logo {
   position: absolute;
   left: 50%;
-  margin-left: -70px;
+  transform: translate(-50%);
+  z-index: 2;
 }
 
 .main-navigation {
@@ -116,15 +116,32 @@ img {
 }
 
 .greeting {
+  position: relative;
   display: flex;
   height: 508px;
   margin: auto;
   background-color: #f2f2f2;
-  background-image: url("../img/polygon.svg"),
-                    url("../img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom, 0 -56px;
+  background-position: 0 -56px;
 }
+
+.greeting::after {
+  content: "";
+  bottom: -1px;
+  width: 100%;
+  height: 59px;
+  background-size: 100% auto;
+  background: url("../img/polygon.svg") no-repeat center bottom;
+}
+
+.greeting::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
 
 .greeting-title {
   width: 459px;
@@ -134,29 +151,27 @@ img {
 
 .desc {
   background-color: #ffffff;
+  padding-top: 59.5px;
+  padding-bottom: 50px;
 }
 
-.desc p {
+.desc-slogan,
+.desc-lead{
   margin: 0;
 }
 
-.desc-lead,
-.booking p {
+.desc-lead {
   text-align: center;
   line-height: 26px;
   color: #333333;
 }
-.desc-lead {
-  padding-bottom: 50px;
-}
 
 .desc-slogan {
-  padding-top: 60px;
-  padding-bottom: 28px;
   text-align: center;
   line-height: 26px;
   font-size: 21px;
   font-weight: bold;
+  margin-bottom: 28px;
 }
 
 .advantages {
@@ -171,17 +186,17 @@ img {
 }
 
 .advantages-title {
+  word-break: break-word;
   width: 160px;
   margin: 0 auto;
   font-size: 21px;
   font-weight: bold;
-  margin-top: 47px;
-  margin-bottom: 20.5px;
+  margin-bottom: 23px;
 }
 
 .advantages-number {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .offers {
@@ -207,10 +222,13 @@ img {
   margin-right:auto;;
 }
 
+.advantages-text {
+  padding-top: 47px;
+  padding-bottom: 60px;
+}
 .advantages-slogan {
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
 }
 
 .advantages-item {
@@ -229,7 +247,6 @@ img {
 .right .advantages-text {
   order: 1;
 }
-.advantages-top .advantages-text,
 .advantages-top .advantages-text {
   width: 400px;
 }
@@ -259,16 +276,16 @@ img {
 }
 
 .booking {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   align-items: center;
   background-color: #ffffff;
+  padding-top: 50.5px;
+  text-align: center;
 }
 
 .booking span {
   display: block;
-  padding-top: 50.5px;
-  padding-bottom: 23.5px;
+  margin-bottom: 23.5px;
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
@@ -276,8 +293,10 @@ img {
 
 .booking p {
   margin:0;
-  width: 500px;
-  padding-bottom: 43px;
+  margin-bottom: 48px;
+  text-align: center;
+  line-height: 24px;
+  color: #333333;
 }
 
 .booking-search {
@@ -293,8 +312,8 @@ img {
 .btn-booking {
   width: 568px;
   background-color: #766357;
-  padding-top: 29.5px;
-  padding-bottom: 29.5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .btn-find {
@@ -358,9 +377,10 @@ input[value] {
   align-items: center;
   min-height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 72px;
 }
 
-.footerr {
+.position-footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -368,13 +388,13 @@ input[value] {
 }
 
 .main-footer>span {
+  box-sizing: border-box;
   display: block;
   width: 240px;
-  margin-left: 70px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  text-align: center;
+  padding-left: 60px;
 }
 
 .footer-social {
@@ -415,26 +435,28 @@ input[value] {
 .link {
   display: flex;
   align-items: center;
-  width: 240px;
-  margin-right: 70px;
-  text-align: center;
+  width: 241px;
 }
 
-.website path {
+.website path,
+.website rect {
   fill: #000000;
 }
 
-.website:hover path {
+.website:hover path,
+.website:hover rect{
   fill: #81b3d2;
 }
 
-.website:active path {
+.website:active path,
+.website:active rect {
   fill: #bdbbbc;
 }
 
 .link span {
   line-height: 26px;
   margin-right: 6px;
+  margin-left: 16px;
 }
 
 .housing {
@@ -582,6 +604,7 @@ legend {
 .offers-item {
   position: relative;
   padding-top: 161px;
+  padding-bottom: 84.5px;
   width: 400px;
 }
 
@@ -597,7 +620,6 @@ legend {
 .offers-item p {
   width: 300px;
   margin: 0 auto;
-  margin-bottom: 84.5px;
 }
 
 
@@ -638,26 +660,25 @@ legend {
 }
 .hotel-search-list {
   min-height: 173px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 54px;
 }
 
 .hotel-search-wrapper {
+  position: absolute;
+  left:50%;
+  transform: translate(-50%);
   width: 568px;
   box-sizing: border-box;
   padding: 55px;
+  background-color: #ffffff;
 }
 
 .hotel-search-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
   width: 458px;
+  margin-bottom: 29px;
 }
 
 .hotel-search-item input[name="arrival-date"],
@@ -684,15 +705,15 @@ legend {
 .calendar:active rect {
   fill: #81b3d2;
 }
-
+.hotel-search-item:nth-of-type(1) label{
+  margin-right: 20px;
+}
+.hotel-search-item:nth-of-type(2) label {
+  margin-right: 18px;
+}
 .hotel-search-item:nth-of-type(3),
 .hotel-search-item:nth-of-type(4) {
   width: 226px;
-}
-
-.hotel-search-item:nth-of-type(4) {
-  justify-content: flex-end;
-  margin-left:auto;
 }
 
 .hotel-search-item:nth-of-type(4) label {
