@@ -68,17 +68,26 @@ img {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 72px;
   margin: 0;
 }
 
 .site-navigation li {
-  width: 20%;
-  text-align: center;
+  width: 22.72727272727273%;
+  padding: 14px 0 16px 0;
+
 }
 
-.site-navigation li:nth-of-type(4n+2) {
-  margin-right: 20%;
+.site-item-left {
+  text-align: left;
+}
+
+.site-item-right {
+  text-align: right;
+}
+
+.site-navigation li:nth-of-type(4n+3) {
+  margin-left: auto;
 }
 
 .main-navigation .active,
@@ -94,9 +103,7 @@ img {
 }
 
 .main-navigation a {
-  display: block;
   color: #000000;
-  padding: 14px 0;
 }
 
 .main-navigation a:hover,
@@ -110,7 +117,7 @@ img {
 
 .greeting {
   display: flex;
-  height: 510px;
+  height: 508px;
   margin: auto;
   background-color: #f2f2f2;
   background-image: url("../img/polygon.svg"),
