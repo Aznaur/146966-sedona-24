@@ -161,16 +161,20 @@ img {
 }
 
 .desc-lead {
+  width: 500px;
+  margin: 0 auto;
   text-align: center;
   line-height: 26px;
   color: #333333;
 }
 
 .desc-slogan {
+  width: 444px;
   text-align: center;
   line-height: 26px;
   font-size: 21px;
   font-weight: bold;
+  margin: 0 auto;
   margin-bottom: 28px;
 }
 
@@ -284,6 +288,8 @@ img {
 }
 
 .booking span {
+  width: 400px;
+  margin: 0 auto;
   display: block;
   margin-bottom: 23.5px;
   font-size: 30px;
@@ -292,7 +298,8 @@ img {
 }
 
 .booking p {
-  margin:0;
+  width:440px;
+  margin:0 auto;
   margin-bottom: 48px;
   text-align: center;
   line-height: 24px;
@@ -662,6 +669,9 @@ legend {
 }
 
 .offers-item h3 {
+  word-break: break-word;
+  width:240px;
+  margin: 0 auto;
   margin-bottom: 22.5px;
 }
 .offers-item p {
