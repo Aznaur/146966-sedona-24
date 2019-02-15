@@ -390,18 +390,16 @@ input[value] {
 .main-footer>span {
   box-sizing: border-box;
   display: block;
-  width: 240px;
+  width: 180px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  padding-left: 60px;
+  margin-left: 60px;
+  padding-bottom: 5px;
 }
 
 .footer-social {
   width: 150px;
-}
-
-.footer-social ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -438,6 +436,10 @@ input[value] {
   width: 241px;
 }
 
+.website {
+  padding-top: 5px;
+}
+
 .website path,
 .website rect {
   fill: #000000;
@@ -455,8 +457,9 @@ input[value] {
 
 .link span {
   line-height: 26px;
-  margin-right: 6px;
+  margin-right: 8px;
   margin-left: 16px;
+  padding-bottom: 3px;
 }
 
 .housing {
@@ -538,11 +541,11 @@ input[value] {
 
 .btn {
   font-weight: bold;
-  vertical-align: middle;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   padding: 4px 17px;
+  padding-bottom: 5px;
 }
 
 .to-book {
@@ -565,7 +568,7 @@ input[value] {
   text-align: center;
   color: #666666;
   background-color: #f2f2f2;
-  padding: 2px 0;
+  padding: 3px 0;
 }
 
 .map {
@@ -717,6 +720,7 @@ legend {
   box-sizing: border-box;
   padding: 55px;
   background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .hotel-search-item {
@@ -733,6 +737,7 @@ legend {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 13px;
+  padding-right:20px;
   width :346px;
   box-sizing: border-box;
 }
@@ -762,7 +767,7 @@ legend {
 }
 
 .hotel-search-item:nth-of-type(4) label {
-  margin-left: 43px;
+  margin-left: 47px;
 }
 
 .hotel-search-item input[name="adults"],
@@ -770,19 +775,18 @@ legend {
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
-  width: 114px;
+  width: 38px;
   box-sizing: border-box;
 }
 
 .minus-control {
-  position: absolute;
   left:112px;
   top: 0;
   width: 38px;
   height: 38px;
   border: none;
   padding: 0;
-  background-color: inherit;
+  background-color: #f2f2f2;
 }
 
 .minus-control svg {
@@ -790,18 +794,22 @@ legend {
 }
 
 .plus-control{
-  position: absolute;
   right:0;
   top: 0;
   width: 38px;
   height: 38px;
   border: none;
   padding: 0;
-  background-color: inherit;
+  background-color: #f2f2f2;
 }
 
 .plus-control svg {
   margin-top: 3px;
+}
+
+.control-wrapper {
+  display: flex;
+  width: 114px;
 }
 
 .calendar {
@@ -840,12 +848,17 @@ fieldset {
 }
 
 .infrastructure legend,
-.housing-type legend{
+.housing-type legend {
   margin-bottom: 26px;
+}
+
+.price legend {
+  margin-bottom: 11px;
 }
 
 .price {
   width: 328px;
+  margin-left: 245px;
 }
 
 .infrastructure-list,
@@ -880,8 +893,9 @@ fieldset {
   fill:#81b3d2;
 }
 .list-item {
-  padding: 25px 72px;
+  padding: 24px 72px;
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
 }
 
 .list-item h3 {
@@ -891,13 +905,13 @@ fieldset {
 }
 
 .housing-photo {
-  padding-top: 5px;
+  padding-top: 6px;
 }
 
 .housing-description {
   margin:0;
   padding:0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .list-item:nth-of-type(1) .type{
@@ -915,7 +929,7 @@ fieldset {
 .housing-star {
   display: flex;
   justify-content: flex-end;
-  padding-top: 4px;
+  padding-top: 5px;
   margin-bottom: 47px;
   margin-left: auto;
 }
@@ -931,4 +945,187 @@ fieldset {
 
 .housing-star span:last-of-type {
   margin-right: 0;
+}
+
+.infrastructure-item,
+.housing-type-item {
+  margin-bottom: 25px;
+  padding-left: 39px;
+}
+
+.housing-type-item {
+  padding-left: 42px;
+}
+
+.infrastructure-item label,
+.housing-type-item label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.housing-type {
+  margin-left: 14px;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  top: 0px;
+  left: -40px;
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-range {
+  width: 318px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 31px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 82px;
+  padding-left: 64px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 79%;
+}
+
+.btn-filter {
+  display: block;
+  margin-left: 85px;
+  padding: 6px 33px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-filter:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
