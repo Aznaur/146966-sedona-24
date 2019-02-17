@@ -47,6 +47,7 @@ img {
 .main-header-logo {
   position: absolute;
   left: 50%;
+  top: -1px;
   transform: translate(-50%);
   z-index: 2;
 }
@@ -195,7 +196,7 @@ img {
   margin: 0 auto;
   font-size: 21px;
   font-weight: bold;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .advantages-number {
@@ -228,7 +229,7 @@ img {
 
 .advantages-text {
   padding-top: 47px;
-  padding-bottom: 60px;
+  padding-bottom: 59px;
 }
 .advantages-slogan {
   margin: 0;
@@ -300,7 +301,7 @@ img {
 .booking p {
   width:440px;
   margin:0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 47px;
   text-align: center;
   line-height: 24px;
   color: #333333;
@@ -400,6 +401,7 @@ input[value] {
   line-height: 26px;
   font-weight: bold;
   margin-left: 60px;
+  padding-top:10px;
 }
 
 .footer-social {
@@ -486,7 +488,7 @@ input[value] {
 
 .detail-hotel-search {
   display: flex;
-  padding-top: 26px;
+  padding-top: 27px;
   padding-right:26px;
 }
 
@@ -657,7 +659,7 @@ legend {
 .offers-item {
   position: relative;
   padding-top: 161px;
-  padding-bottom: 84.5px;
+  padding-bottom: 81.5px;
   width: 400px;
 }
 
@@ -671,7 +673,7 @@ legend {
   word-break: break-word;
   width:240px;
   margin: 0 auto;
-  margin-bottom: 22.5px;
+  margin-bottom: 24.5px;
 }
 .offers-item p {
   width: 300px;
@@ -858,7 +860,7 @@ fieldset {
 
 .infrastructure legend,
 .housing-type legend {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .price legend {
@@ -904,7 +906,7 @@ fieldset {
 .list-item {
   padding: 24px 72px;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .list-item h3 {
@@ -1065,7 +1067,7 @@ fieldset {
 .price-controls input {
   width: 50px;
   margin: 0;
-
+  height: 30px;
   color: inherit;
   font: inherit;
 
