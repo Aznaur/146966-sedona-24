@@ -1083,6 +1083,17 @@ img {
   user-select: none;
 }
 
+.detail-hotel-search label {
+  width: 100px;
+}
+
+.housing-type-item input:hover + label,
+.housing-type-item input:focus + label,
+.infrastructure-item input:hover + label,
+.infrastructure-item input:focus + label{
+  color: #d6d6d6;
+}
+
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
@@ -1195,12 +1206,15 @@ img {
   border: 8px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background-color: #1c4f80;
+.range-toggle:hover,
+.range-toggle:focus {
+  margin-left: -1px;
+  top: -10px;
+  border: 9px solid #ffffff;
 }
 
 .range-toggle-min {
