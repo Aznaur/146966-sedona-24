@@ -808,6 +808,7 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  z-index: 20;
 }
 
 .hotel-search-item {
