@@ -1247,3 +1247,8 @@ img {
 .wrapper-hotel-search-item {
   width: 346px;
 }
+
+
+.map iframe {
+  width: 100%;
+}
