@@ -798,6 +798,7 @@ img {
 }
 
 .hotel-search-wrapper {
+  display: none;
   position: absolute;
   left: 50%;
   margin-left: -284px;
@@ -1252,4 +1253,9 @@ img {
 
 .map iframe {
   width: 100%;
+}
+
+
+.modal-show {
+  display: block;
 }
