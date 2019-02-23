@@ -149,12 +149,12 @@ img {
 
 .greeting::after {
   content: "";
-  bottom: 0px;
+  bottom: 0.5px;
   height: 57px;
   background-image: url("../img/polygon.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 1200px 56.9px;
+  background-size: 1200px 57px;
   z-index: 1;
 }
 
