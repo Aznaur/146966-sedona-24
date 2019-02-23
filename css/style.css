@@ -437,6 +437,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .main-footer>span {
@@ -662,7 +663,7 @@ img {
   top:0;
   display: block;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 
 .filter {
@@ -812,7 +813,7 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  z-index: 2;
+  z-index: 3;
 }
 
 .hotel-search-item {
@@ -1255,7 +1256,10 @@ img {
 
 
 .map iframe {
+  display: block;
+  position:relative;
   width: 100%;
+  z-index: 2;
 }
 
 .modal-hide {
