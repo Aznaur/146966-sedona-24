@@ -155,7 +155,7 @@ img {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 1200px 57px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .greeting-title {
@@ -289,6 +289,8 @@ img {
 .offers {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   order: -1;
 }
@@ -353,12 +355,14 @@ img {
 }
 
 .btn-booking {
+  position: relative;
   display: block;
   margin: 0 auto;
   width: 568px;
   background-color: #766357;
   padding-top: 30px;
   padding-bottom: 30px;
+  z-index: 10;
 }
 
 .btn-find {
@@ -798,7 +802,6 @@ img {
 }
 
 .hotel-search-wrapper {
-  display: none;
   position: absolute;
   left: 50%;
   margin-left: -284px;
@@ -809,7 +812,7 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  z-index: 20;
+  z-index: 2;
 }
 
 .hotel-search-item {
@@ -1255,7 +1258,81 @@ img {
   width: 100%;
 }
 
-
+.modal-hide {
+  -webkit-animation: modal-hide 0.7s forwards;
+          animation: modal-hide 0.7s forwards;
+}
 .modal-show {
-  display: block;
+  -webkit-animation: modal-show 0.7s forwards;
+          animation: modal-show 0.7s forwards;
+}
+
+@-webkit-keyframes modal-show  {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-show {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+@-webkit-keyframes modal-hide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+
+
+@keyframes modal-hide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+
+.wrapper-search {
+    position: relative;
+    overflow: hidden;
 }
