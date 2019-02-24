@@ -588,12 +588,16 @@ img {
 }
 
 .sorting-title {
+  width: 75px;
+  word-break: break-word;
   margin: 0;
   margin-right: 40px;
   padding-top: 4px;
 }
 
 .sorting-text {
+  width: 117px;
+  word-break: break-word;
   margin: 0;
   margin-right: 48px;
 }
@@ -668,7 +672,7 @@ img {
 
 .filter {
   min-height: 217px;
-  background-color: #e1e1e1;
+  background-color: #7496bb;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: center -57px;
@@ -705,6 +709,15 @@ img {
   border-bottom: 1px dotted #81b3d2;
 }
 
+.sorting-by-type {
+  width: 49px;
+  word-break: break-word;
+}
+.sorting-by-rating {
+  width: 76px;
+  word-break: break-word;
+}
+
 .sorting-by-type:hover,
 .sorting-by-rating:hover {
   color: #81b3d2;
@@ -713,10 +726,12 @@ img {
 .sorting-by-type:active,
 .sorting-by-rating:active {
   color: #000000;
-  border: none;
+  border-bottom: 1px dotted transparent;
 }
 
 .sorting-by-price {
+  width: 49px;
+  word-break: break-word;
   color: #81b3d2;
 }
 
@@ -865,6 +880,7 @@ img {
   padding-bottom: 6px;
   text-align: center;
   width: 38px;
+  font-weight: bold;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1313,4 +1329,29 @@ img {
 .wrapper-search {
   position: relative;
   overflow: hidden;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  cursor: default;
+  background-image: url(../img/checkbox-offd.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label,
+.filter-input-checkbox:disabled:checked + label {
+    cursor: default;
+    color: #6a6a6a;
+}
+
+.filter-input-checkbox:disabled + label:hover,
+.filter-input-checkbox:disabled:checked + label {
+    color: #6a6a6a;
+}
+
+.filter-input-checkbox:disabled:checked + label::before {
+    cursor: default;
+    background-image: url(../img/checkbox-ond.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
