@@ -684,20 +684,6 @@ img {
   color: #ffffff;
 }
 
-.btn-filter {
-  border: 2px solid #ffffff;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.btn-filter:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 .sorting-title,
 .sorting a {
   font-size: 12px;
@@ -943,16 +929,12 @@ img {
 
 .infrastructure,
 .housing-type {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.infrastructure,
-.housing-type {
   width: 240px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .infrastructure legend,
@@ -1096,11 +1078,11 @@ img {
 .housing-type-item input:hover + label,
 .housing-type-item input:focus + label,
 .infrastructure-item input:hover + label,
-.infrastructure-item input:focus + label{
+.infrastructure-item input:focus + label {
   color: #d6d6d6;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -1116,7 +1098,7 @@ img {
   margin-left: 14px;
 }
 
-.filter-input-checkbox:checked+label::before {
+.filter-input-checkbox:checked + label::before {
   content: "";
   top: 0px;
   left: -40px;
@@ -1260,6 +1242,8 @@ img {
   position:relative;
   width: 100%;
   z-index: 2;
+  height:593px;
+  border:0;
 }
 
 .modal-hide {
@@ -1277,21 +1261,18 @@ img {
             transform: translateY(-100%);
     opacity: 0;
   }
-
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
   }
 }
-
 @keyframes modal-show {
   0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     opacity: 0;
   }
-
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -1299,14 +1280,11 @@ img {
   }
 }
 
-
-
 @-webkit-keyframes modal-hide {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-
   100% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
@@ -1316,15 +1294,12 @@ img {
             transform-origin: top;
   }
 }
-
-
 
 @keyframes modal-hide {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-
   100% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
@@ -1335,8 +1310,7 @@ img {
   }
 }
 
-
 .wrapper-search {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
