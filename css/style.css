@@ -74,6 +74,7 @@ img {
 .sorting-list {
   display: flex;
   flex-wrap: wrap;
+  width: 600px;
   margin:0;
   padding:0;
 }
