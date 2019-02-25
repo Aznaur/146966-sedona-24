@@ -66,8 +66,16 @@ img {
 .advantages-list,
 .offers-list,
 .hotel-search-list,
-.filter ul {
+.filter ul,
+.sorting-list {
   list-style: none;
+}
+
+.sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
 }
 
 .site-navigation {
@@ -694,12 +702,13 @@ img {
   line-height: 18px;
 }
 
-.sorting>a {
-  margin-right: 32px;
+.sorting-list li {
+  width: 76px;
+  margin-right: 5px;
   padding-top: 4px;
 }
 
-.sorting a:last-of-type {
+.sorting-list li:last-of-type {
   margin-right: 0;
 }
 
