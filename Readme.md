@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Азнаур Хапчаев](https://up.htmlacademy.ru/htmlcss/24/user/146966).
+* Студент: [Азнаур](https://up.htmlacademy.ru/htmlcss/24/user/146966).
 * Наставник: [Александр Воробьев](https://htmlacademy.ru/profile/inqanter).
 
 ---
